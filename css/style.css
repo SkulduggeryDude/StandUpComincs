@@ -10,13 +10,14 @@ body {
 }
 
 .title {
+    text-align: center;
     background-color: rgb(3, 59, 3);
+    font-size: 100%;
 }
 
 .navbar {
     background-color: rgb(3, 59, 3);
     color: white;
-
 }
 
 .navbar a {
