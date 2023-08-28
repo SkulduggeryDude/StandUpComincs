@@ -11,14 +11,16 @@ body {
     background-image: url("../images/headerbackground.jpg");
     background-size: cover;
     color: white;
-    padding-top: 15%;
+    padding-top: 100px;
     font-family: 'Komika Hand', sans-serif;
+    position: relative; /*Position relative so logo will sit inside it*/
 }
 
 .title {
     text-align: center;
     background-color: rgb(3, 59, 3);
     font-size: 30px;
+
 }
 
 .navbar {
@@ -45,16 +47,16 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/*Position is absolute to make it sit inside header container, is set to bottom left with :left/right*/
+.logo {
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+    height: 100px;
+    z-index: 1; /*z index above the background of title and navbar*/
+    background-color: rgb(3, 59, 3);
+    border-radius: 10%;
+}
 
 
 
