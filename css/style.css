@@ -10,13 +10,14 @@ body {
 }
 
 .title {
+    text-align: center;
     background-color: rgb(3, 59, 3);
+    font-size: 100%;
 }
 
 .navbar {
     background-color: rgb(3, 59, 3);
     color: white;
-
 }
 
 .navbar a {
@@ -31,4 +32,25 @@ body {
 .navbar a:hover {
     color: white !important;
     text-decoration: underline !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #174418;
+    color: white;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
