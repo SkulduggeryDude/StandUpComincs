@@ -1,10 +1,10 @@
 html {
-    font-family: 'Liberation Sans', sans-serif;                                          
+    font-family: 'Liberation Sans', sans-serif;
 }
 
 body {
     background-color: rgb(140, 235, 135);
-    
+
 }
 
 .header {
@@ -13,7 +13,8 @@ body {
     color: white;
     padding-top: 100px;
     font-family: 'Komika Hand', sans-serif;
-    position: relative; /*Position relative so logo will sit inside it*/
+    position: relative;
+    /*Position relative so logo will sit inside it*/
 }
 
 .title {
@@ -53,7 +54,8 @@ h2 {
     bottom: 15px;
     left: 16px;
     height: 100px;
-    z-index: 1; /*z index above the background of title and navbar*/
+    z-index: 1;
+    /*z index above the background of title and navbar*/
     background-color: rgb(3, 59, 3);
     border-radius: 10%;
 }
