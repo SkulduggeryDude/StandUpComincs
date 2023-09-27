@@ -48,7 +48,7 @@ h2 {
 }
 
 
-/*Position is absolute to make it sit inside header container, is set to bottom left with :left/right*/
+/*Position is absolute to make it sit inside header container, is set to bottom left with left: 16px bottom: 15px*/
 .logo {
     position: absolute;
     bottom: 15px;
@@ -61,12 +61,40 @@ h2 {
 }
 
 
+.bodyContent{
+    width: 75%;
+    margin: auto;
+}
+
+.introQuote{
+    margin: auto;
+    text-align: center;
+
+}
+
+.introParagraph{
+    margin: auto;
+    border-radius: 5%;
+    border-style: solid;
+}
+
+.homeImage img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.homeTestimonials {
+    text-align: center;
+}
+
+
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10%;
+    height: 5%;
     background-color: #174418;
     color: white;
     text-align: center;
@@ -76,10 +104,4 @@ footer {
 .column {
     float: left;
     width: 33.33%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
