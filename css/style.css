@@ -21,7 +21,6 @@ body {
     text-align: center;
     background-color: rgb(3, 59, 3);
     font-size: 30px;
-
 }
 
 .navbar {
@@ -47,6 +46,9 @@ h2 {
     text-align: center;
 }
 
+.form-group.row {
+    padding-top: 10px;
+}
 
 /*Position is absolute to make it sit inside header container, is set to bottom left with left: 16px bottom: 15px*/
 .logo {
@@ -74,8 +76,7 @@ h2 {
 
 .introParagraph{
     margin: auto;
-    border-radius: 5%;
-    border-style: solid;
+    margin-bottom: 5%;
 }
 
 .homeImage img {
