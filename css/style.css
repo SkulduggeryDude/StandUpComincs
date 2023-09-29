@@ -71,12 +71,13 @@ h2 {
 .introQuote{
     margin: auto;
     text-align: center;
+    padding-top: 20px;
 }
 
 .introParagraph{
     margin: auto;
     margin-bottom: 5%;
-    padding: 5%;
+    padding: 3%;
 }
 
 .homeImage img {
@@ -102,4 +103,9 @@ footer {
     font-family: 'Komika Hand', sans-serif;
     margin-top: 5%;
     padding-bottom: 20px;
+}
+
+
+svg{
+    margin: 5px;
 }
