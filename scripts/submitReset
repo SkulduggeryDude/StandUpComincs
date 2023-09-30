@@ -4,10 +4,12 @@
     const div = document.getElementById("hidden_div");
     Array.from(forms).forEach(function (form) {
     form.addEventListener('submit', function (event) {
+        setTimeout(function() {
+            div.style.display = 'none';
+        }, 1000);
         if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
-        div.style.display = 'none';
         } else {
             div.style.display = '';
         }
