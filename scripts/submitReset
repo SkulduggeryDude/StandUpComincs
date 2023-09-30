@@ -6,26 +6,25 @@
     const div = document.getElementById("hidden_div");
     // I think this is to apply this function to multiple forms, we only have one so its not needed but I wont risk breaking it
     Array.from(forms).forEach(function (form) {
-    // Function waits for the submit event on the button, note this only happens when everything is valid
-    form.addEventListener('submit', function (event) {
-        // When button is clicked after 1000 milliseconds hide the div
-        setTimeout(function() {
-            div.style.display = 'none';
-        }, 1000);
-        // If the event happens regardless of validity then then checks if it is false and stops the page from reloading with event.preventDefault, this is an inbuilt browser thing
-        if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-        } else {
-            // If the validity is true then it removes the none that hides the div, this is always true right now
-            div.style.display = '';
-        }
-        //The form will always stop the page from reloading with event.preventDefault, this is an inbuilt browser thing
-        event.preventDefault();
-        //The form will always reset the fields, removing previous user data
-        form.reset();
-        
-    }, false);
+        // Function waits for the submit event on the button, note this only happens when everything is valid
+        form.addEventListener('submit', function (event) {
+            // When button is clicked after 1000 milliseconds hide the div
+            setTimeout(function () {
+                div.style.display = 'none';
+            }, 1000);
+            // If the event happens regardless of validity then then checks if it is false and stops the page from reloading with event.preventDefault, this is an inbuilt browser thing
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            } else {
+                // If the validity is true then it removes the none that hides the div, this is always true right now
+                div.style.display = '';
+            }
+            //The form will always stop the page from reloading with event.preventDefault, this is an inbuilt browser thing
+            event.preventDefault();
+            //The form will always reset the fields, removing previous user data
+            form.reset();
+        }, false);
     });
 })();
 

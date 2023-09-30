@@ -16,7 +16,7 @@ body {
     background-image: url("../images/headerbackground.jpg");
     background-size: cover;
     /* Sets colour of title, not links */
-    color: white; 
+    color: white;
     padding-top: 100px;
     font-family: 'Komika Hand', sans-serif;
     position: relative;
@@ -74,21 +74,21 @@ h2 {
 }
 
 /* Narrows website to 75%, on very large viewports this is capped at 1000px wide */
-.bodyContent{
+.bodyContent {
     width: 75%;
     margin: auto;
     max-width: 1000px;
 }
 
 /* This is the text below the navbar */
-.introQuote{
+.introQuote {
     margin: auto;
     text-align: center;
     padding-top: 20px;
 }
 
 /* Used for the large paragraphs on pages */
-.introParagraph{
+.introParagraph {
     padding: 3%;
 }
 
@@ -113,7 +113,7 @@ h2 {
 /* Removes bulletpoints on about page */
 ul {
     list-style: none;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 /* Padding bottom stops the address touching the bottom of the page, it extends down more than the others on smaller viewports */
@@ -125,6 +125,6 @@ footer {
 }
 
 /* Adds spacing around the social media icons */
-svg{
+svg {
     margin: 5px;
 }
