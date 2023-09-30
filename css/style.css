@@ -47,7 +47,7 @@ h2 {
 }
 
 .form-group.row {
-    padding-top: 10px;
+    padding-top: 14px;
 }
 
 /*Position is absolute to make it sit inside header container, is set to bottom left with left: 16px bottom: 15px*/
@@ -66,6 +66,7 @@ h2 {
 .bodyContent{
     width: 75%;
     margin: auto;
+    max-width: 1000px;
 }
 
 .introQuote{
@@ -94,6 +95,10 @@ h2 {
     max-height: 100%;
 }
 
+ul {
+    list-style: none;
+    padding-top:20px;
+}
 
 footer {
     background-color: #174418;
