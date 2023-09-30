@@ -50,7 +50,7 @@ h2 {
     padding-top: 14px;
 }
 
-/*Position is absolute to make it sit inside header container, is set to bottom left with left: 16px bottom: 15px*/
+/*Position is absolute to make it sit inside header container, is set to bottom left with left: 16px bottom: 15px. If changed it clips the title*/
 .logo {
     position: absolute;
     bottom: 15px;

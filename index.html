@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS stylesheet links-->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <!--Importing fonts komika for header/footer and liberation sans for body text-->
   <link href="https://fonts.cdnfonts.com/css/komika-hand" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet">
   <title>STAND UP COMICS</title>
 </head>
+<!-- Body has flex for positioning elements, min-vh-100 is used too make the footer always be at the bottom of the page, no gap underneath it -->
 <body class="d-flex flex-column min-vh-100">
+  <!-- linking bookstrap javascript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+    <!-- Header is a container for the logo, image and navbar -->
   <div class="header">
+    <!-- Image uses d-none to hide when on narrow viewports, d-sm-block to show when higher than bootstraps sm size  -->
     <a class="d-none d-sm-block" href="index.html"><img class="logo" src="./images/whitenobackground.png"></a>
     <div class="title">STAND UP COMICS</div>
+    <!-- navbar class for bootstrap, expand-sm makes the navbar toggle to a dropdown when viewport is small -->
     <nav class="navbar navbar-dark navbar-expand-sm">
       <div class="container-fluid">
         <div class="navbar-brand"></div>
+        <!-- This button extents the acordion when clicked, hides when viewport isnt small -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- The link content in the navbar -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
+            <!-- active makes link underlined -->
             <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
             <a class="nav-link" href="about.html">ABOUT</a>
             <a class="nav-link" href="trades.html">TRADES</a>
@@ -34,16 +44,20 @@
       </div>
     </nav>
   </div>
+  <!-- body content tag makes content take up 75% of page width, max of 1000px wide -->
   <div class="bodyContent">
     <h4 class="introQuote">
       Your local comic book store for buying, selling and trading collectables
     </h4>
+    <!-- Creates a green line to seperate content -->
     <hr class="border border-success border-2 opacity-100">
     <div class="homeImage">
+      <!-- d-flex and justify-content-center centers everything in bodycontent div -->
       <img class="homeImageImg d-flex justify-content-center" src="./images/home_image.png">
     </div>
     <div class="introParagraph d-flex justify-content-center">
         <p>
+          <!-- Wrtten by ChatGPT -->
             Welcome to Stand Up Comics, your portal to the extraordinary! At Stand-Up Comics, we 
             believe that every day is an opportunity for adventure, and every page is a door to a 
             new world. Whether you're a seasoned collector, a curious novice, or somewhere in 
@@ -59,11 +73,15 @@
       Testimonials
     </h5>
     <hr class="border border-success border-2 opacity-100">
+    <!-- Cards are used for all products on website -->
     <div class="cards">
+      <!-- Creating a grid for a 3 column layout for each card with md-3, row-cols-1 on small viewport -->
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col">
+          <!-- Creating card, with green background we are stealing from a premade colour palette called success -->
           <div class="card text-center text-bg-success border-success mb-3"
             style="max-width: 18rem; border-width: 10px; margin:auto">
+            <!-- Adding image inside the top part of the card with card-img-top -->
             <img src="./images/blacklotus.jpg" class="card-img-top" alt="Holographic Pikachu">
             <div class="card-body">
               <h5 class="card-title">Black Lotus Alpha Mint 9</h5>
@@ -94,9 +112,12 @@
       </div>
     </div>
   </div>
+  <!-- mt-auto puts the footer at the bottom of the page -->
   <footer class="mt-auto">
+    <!-- Creating container for columns, which are flex boxes -->
     <div class="footer container">
-      <div class="row row-cols-1 row-cols-md-3  d-flex justify-content-center" style="padding-top: 16px;">
+      <!-- Same sizing for the rows as the navbar -->
+      <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center" style="padding-top: 16px;">
         <div class="col-sm-3 d-flex justify-content-center">
           43 Street Road<br>Hamilton 3205
     
@@ -106,7 +127,8 @@
     
         </div>
         <div class="col-sm-3 d-flex justify-content-center">
-          
+          <!-- 4 icons, spaced out with flex box and justify center. They are black by default, white with fill  -->
+                  <!-- These all link externally to a stylesheet, its not imported in the header -->
           <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
           </svg></a>
