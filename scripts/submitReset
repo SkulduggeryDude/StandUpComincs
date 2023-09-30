@@ -1,0 +1,19 @@
+(function () {
+    'use strict';
+    const forms = document.querySelectorAll('.validation');
+    const div = document.getElementById("hidden_div");
+    Array.from(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        div.style.display = 'none';
+        } else {
+            div.style.display = '';
+        }
+        event.preventDefault();
+        form.reset();
+        
+    }, false);
+    });
+})();
